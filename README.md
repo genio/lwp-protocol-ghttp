@@ -48,7 +48,7 @@ Refer to [LWP::UserAgent](http://metacpan.org/pod/LWP::UserAgent) for descriptio
 
 ## MAINTAINER
 
-Chase Whitener << <cwhitener at gmail.com> >>
+Chase Whitener -- cwhitener@gmail.com
 
 ## AUTHOR
 
