@@ -75,7 +75,6 @@ LWP::Protocol::GHTTP - Provide GHTTP support for L<LWP::UserAgent> via L<HTTP::G
     use strict;
     use warnings;
     use LWP::UserAgent;
-    use LWP::Protocol::GHTTP;
 
     # create a new object
     LWP::Protocol::implementor('http', 'LWP::Protocol::GHTTP');

@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME             => 'LWP::Protocol::GHTTP',
-    AUTHOR           => q{Chase Whitener <cwhitener@gmail.com>},
+    AUTHOR           => q{Gisle Aas <gisle@activestate.com>},
     VERSION_FROM     => 'lib/LWP/Protocol/GHTTP.pm',
     ABSTRACT_FROM    => 'lib/LWP/Protocol/GHTTP.pm',
     LICENSE          => 'perl',
@@ -26,7 +26,7 @@ WriteMakefile(
     },
     BUILD_REQUIRES => {
         'HTTP::Daemon' => 6.0,
-        'Test::More' => 0.88,
+        'Test::More' => 0,
         'Test::Pod' => 0,
         'Test::Pod::Coverage' => 0,
         'Test::LWP::UserAgent' => 0,
@@ -34,7 +34,7 @@ WriteMakefile(
     PREREQ_PM => {
         'HTTP::GHTTP' => 1.07,
         'HTTP::Message' => 6.0,
-        'LWP::UserAgent' => 6.0,
+        'LWP' => 6.15,
         'Try::Tiny' => 0.2,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },

@@ -8,7 +8,6 @@ LWP::Protocol::GHTTP - Provide GHTTP support for [LWP::UserAgent](http://metacpa
 use strict;
 use warnings;
 use LWP::UserAgent;
-use LWP::Protocol::GHTTP;
 
 # create a new object
 LWP::Protocol::implementor('http', 'LWP::Protocol::GHTTP');
