@@ -12,7 +12,7 @@ WriteMakefile(
     META_MERGE   => {
         dynamic_config => 0,
         'meta-spec' => {version => 2},
-        prereqs => {runtime => {requires => {perl => '5.010001'}}},
+        prereqs => {runtime => {requires => {perl => '5.008001'}}},
         resources => {
             bugtracker  => {web =>'http://github.com/genio/lwp-protocol-ghttp/issues'},
             homepage    => 'http://github.com/genio/lwp-protocol-ghttp',
