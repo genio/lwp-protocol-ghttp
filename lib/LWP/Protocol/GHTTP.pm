@@ -85,6 +85,13 @@ LWP::Protocol::GHTTP - Provide GHTTP support for L<LWP::UserAgent> via L<HTTP::G
 
 =head1 DESCRIPTION
 
+This module depends on the Gnome libghttp
+L<http://ftp.gnome.org/pub/gnome/sources/libghttp> project. That project is no
+longer in development.  If you are trying to use this module, you'd likely do
+better to just use L<LWP::Protocol::http> or L<LWP::Protocol::https>.
+
+You have been warned.
+
 The L<LWP::Protocol::GHTTP> module provides support for using HTTP schemed URLs
 with LWP.  This module is a plug-in to the LWP protocol handling, but since it
 takes over the HTTP scheme, you have to tell LWP we want to use this plug-in by
@@ -95,6 +102,15 @@ v6.15 in order to be able to declare its dependencies properly for the CPAN
 tool-chain. Applications that need GHTTP support can just declare their
 dependency on L<LWP::Protocol::GHTTP> and will no longer need to know what
 underlying modules to install.
+
+=head1 CAVEATS
+
+WARNING!
+
+This module depends on the Gnome libghttp
+L<http://ftp.gnome.org/pub/gnome/sources/libghttp> project. That project is no
+longer in development.  If you are trying to use this module, you'd likely do
+better to just use L<LWP::Protocol::http> or L<LWP::Protocol::https>.
 
 =head1 FUNCTIONS
 

@@ -15,11 +15,11 @@ WriteMakefile(
         prereqs => {runtime => {requires => {perl => '5.010001'}}},
         resources => {
             bugtracker  => {web =>'http://github.com/genio/lwp-protocol-ghttp/issues'},
-            homepage    => 'http://github.com/genio/lwp-protocl-ghttp',
+            homepage    => 'http://github.com/genio/lwp-protocol-ghttp',
             repository  => {
                 type => 'git',
-                url => 'http://github.com/genio/lwp-protocl-ghttp.git',
-                web => 'http://github.com/genio/lwp-protocl-ghttp',
+                url => 'http://github.com/genio/lwp-protocol-ghttp.git',
+                web => 'http://github.com/genio/lwp-protocol-ghttp',
             },
         },
         no_index => {directory => ['t']}
