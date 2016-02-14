@@ -25,7 +25,8 @@ WriteMakefile(
         no_index => {directory => ['t']}
     },
     BUILD_REQUIRES => {
-        'Test::More' => 0,
+        'HTTP::Daemon' => 6.0,
+        'Test::More' => 0.88,
         'Test::Pod' => 0,
         'Test::Pod::Coverage' => 0,
         'Test::LWP::UserAgent' => 0,

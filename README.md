@@ -19,7 +19,7 @@ my $res = $ua->get('http://www.example.com');
 
 ## DESCRIPTION
 
-This module depends on the [Gnome libghttp](http://ftp.gnome.org/pub/gnome/sources/libghttp) project.  that project is no longer in development.  If you are trying to use this module, you'd likely do better to just use [LWP::Protocol::http](http://metacpan.org/pod/LWP::Protocol::http) or [LWP::Protocol::https](http://metacpan.org/pod/LWP::Protocol::https).
+This module depends on the [Gnome libghttp](http://ftp.gnome.org/pub/gnome/sources/libghttp) project.  That project is no longer in development.  If you are trying to use this module, you'd likely do better to just use [LWP::Protocol::http](http://metacpan.org/pod/LWP::Protocol::http) or [LWP::Protocol::https](http://metacpan.org/pod/LWP::Protocol::https).
 
 You have been warned.
 
@@ -31,7 +31,7 @@ This module used to be bundled with [libwww-perl](https://metacpan.org/pod/LWP),
 
 It bears repeating:
 
-This module depends on the [Gnome libghttp](http://ftp.gnome.org/pub/gnome/sources/libghttp) project.  that project is no longer in development.  If you are trying to use this module, you'd likely do better to just use [LWP::Protocol::http](http://metacpan.org/pod/LWP::Protocol::http) or [LWP::Protocol::https](http://metacpan.org/pod/LWP::Protocol::https).
+This module depends on the [Gnome libghttp](http://ftp.gnome.org/pub/gnome/sources/libghttp) project.  That project is no longer in development.  If you are trying to use this module, you'd likely do better to just use [LWP::Protocol::http](http://metacpan.org/pod/LWP::Protocol::http) or [LWP::Protocol::https](http://metacpan.org/pod/LWP::Protocol::https).
 
 ## FUNCTIONS
 
