@@ -36,7 +36,7 @@ This module depends on the [Gnome libghttp](http://ftp.gnome.org/pub/gnome/sourc
 ## FUNCTIONS
 
 [LWP::Protocol::GHTTP](http://metacpan.org/pod/LWP::Protocol::GHTTP) inherits all functions from [LWP::Protocol](http://metacpan.org/pod/LWP::Protocol) and provides the following
-overridden functions.
+overriding functions.
 
 ### request
 
