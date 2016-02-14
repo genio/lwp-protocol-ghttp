@@ -115,7 +115,7 @@ better to just use L<LWP::Protocol::http> or L<LWP::Protocol::https>.
 =head1 FUNCTIONS
 
 L<LWP::Protocol::GHTTP> inherits all functions from L<LWP::Protocol> and provides the following
-overridden functions.
+overriding functions.
 
 =head2 request
 
