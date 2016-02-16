@@ -3,6 +3,9 @@ use strict;
 use warnings FATAL => 'all';
 use ExtUtils::MakeMaker;
 
+# The dependency on libghttp is too flakey to smoke test
+exit(0) if $ENV{AUTOMATED_TESTING}; # do not smoke
+
 WriteMakefile(
     NAME             => 'LWP::Protocol::GHTTP',
     AUTHOR           => q{Gisle Aas <gisle@activestate.com>},
@@ -21,8 +24,11 @@ WriteMakefile(
                 url => 'http://github.com/genio/lwp-protocol-ghttp.git',
                 web => 'http://github.com/genio/lwp-protocol-ghttp',
             },
+            x_MailingList => 'mailto:libwww@perl.org',
+            x_IRC => 'irc://irc.perl.org/#lwp',
         },
-        no_index => {directory => ['t']}
+        # x_authority => 'cpan:LWWWP',
+        no_index => {directory => ['t']},
     },
     BUILD_REQUIRES => {
         'HTTP::Daemon' => 6.0,

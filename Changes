@@ -1,4 +1,9 @@
 Revision history for LWP::Protocol::GHTTP
 
-0.001    2016-02-14
-    First version, released on an unsuspecting world.
+6.16    2016-02-16
+    - Stripped from the main LWP distribution
+    - New tests added
+    - Bumped version ahead of LWP to make requirements easier
+    - Removed automated smoke testing
+    - Made documentation changes to make it clear this module should be avoided
+    - strict and warnings

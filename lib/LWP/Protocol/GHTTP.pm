@@ -2,7 +2,7 @@ package LWP::Protocol::GHTTP;
 
 use strict;
 use warnings;
-use v5.8;
+use 5.008001;
 
 use base 'LWP::Protocol';
 
@@ -14,9 +14,9 @@ use IO::Handle ();
 use Try::Tiny qw(try catch);
 use utf8;
 
-our $VERSION = '0.001';
+our $VERSION = '6.16';
 
-our %METHOD = (
+my %METHOD = (
     GET  => METHOD_GET,
     HEAD => METHOD_HEAD,
     POST => METHOD_POST,
@@ -100,7 +100,7 @@ takes over the HTTP scheme, you have to tell LWP we want to use this plug-in by
 calling L<LWP::Protocol>'s C<implementor> function.
 
 This module used to be bundled with L<libwww-perl>, but it was unbundled in
-v6.15 in order to be able to declare its dependencies properly for the CPAN
+v6.16 in order to be able to declare its dependencies properly for the CPAN
 tool-chain. Applications that need GHTTP support can just declare their
 dependency on L<LWP::Protocol::GHTTP> and will no longer need to know what
 underlying modules to install.
