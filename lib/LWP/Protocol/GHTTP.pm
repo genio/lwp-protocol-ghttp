@@ -89,6 +89,9 @@ L<http://ftp.gnome.org/pub/gnome/sources/libghttp> project. That project is no
 longer in development.  If you are trying to use this module, you'd likely do
 better to just use L<LWP::Protocol::http> or L<LWP::Protocol::https>.
 
+L<LWP::Protocol::GHTTP> is only capable of dispatching requests using the C<GET>,
+C<POST>, or C<HEAD> verbs.
+
 You have been warned.
 
 The L<LWP::Protocol::GHTTP> module provides support for using HTTP schemed URLs
@@ -110,6 +113,9 @@ This module depends on the Gnome libghttp
 L<http://ftp.gnome.org/pub/gnome/sources/libghttp> project. That project is no
 longer in development.  If you are trying to use this module, you'd likely do
 better to just use L<LWP::Protocol::http> or L<LWP::Protocol::https>.
+
+Also, L<LWP::Protocol::GHTTP> is only capable of dispatching requests using the C<GET>,
+C<POST>, or C<HEAD> verbs.
 
 =head1 FUNCTIONS
 

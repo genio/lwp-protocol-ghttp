@@ -20,6 +20,8 @@ my $res = $ua->get('http://www.example.com');
 
 This module depends on the [Gnome libghttp](http://ftp.gnome.org/pub/gnome/sources/libghttp) project.  That project is no longer in development.  If you are trying to use this module, you'd likely do better to just use [LWP::Protocol::http](http://metacpan.org/pod/LWP::Protocol::http) or [LWP::Protocol::https](http://metacpan.org/pod/LWP::Protocol::https).
 
+[LWP::Protocol::GHTTP](http://metacpan.org/pod/LWP::Protocol::GHTTP) is only capable of dispatching requests using the ```GET```, ```POST```, or ```HEAD``` verbs.
+
 You have been warned.
 
 The [LWP::Protocol::GHTTP](http://metacpan.org/pod/LWP::Protocol::GHTTP) module provides support for using HTTP schemed URLs with LWP.  This module is a plug-in to the LWP protocol handling, but since it takes over the HTTP scheme, you have to tell LWP we want to use this plug-in by calling [LWP::Protocol](http://metacpan.org/pod/LWP::Protocol)'s ```implementor``` function.
@@ -31,6 +33,8 @@ This module used to be bundled with [libwww-perl](https://metacpan.org/pod/LWP),
 It bears repeating:
 
 This module depends on the [Gnome libghttp](http://ftp.gnome.org/pub/gnome/sources/libghttp) project.  That project is no longer in development.  If you are trying to use this module, you'd likely do better to just use [LWP::Protocol::http](http://metacpan.org/pod/LWP::Protocol::http) or [LWP::Protocol::https](http://metacpan.org/pod/LWP::Protocol::https).
+
+Also, [LWP::Protocol::GHTTP](http://metacpan.org/pod/LWP::Protocol::GHTTP) is only capable of dispatching requests using the ```GET```, ```POST```, or ```HEAD``` verbs.
 
 ## FUNCTIONS
 
