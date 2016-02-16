@@ -122,7 +122,7 @@ overriding functions.
     my $response = $ua->request($request, $proxy, '/tmp/sss');
     my $response = $ua->request($request, $proxy, \&callback, 1024);
 
-Dispatches a request over the HTTP protocol, and returns a response object.
+Dispatches a request over the HTTP protocol and returns a response object.
 Refer to L<LWP::UserAgent> for description of the arguments.
 
 =head1 MAINTAINER
@@ -135,7 +135,7 @@ Gisle Aas
 
 =head1 BUGS
 
-Please report any bugs or feature requests on GitHub L<https://github.com/genio/lwp-protocl-ghttp/issues>.
+Please report any bugs or feature requests on GitHub L<https://github.com/genio/lwp-protocol-ghttp/issues>.
 We appreciate any and all criticism, bug reports, enhancements, or fixes.
 
 =head1 SUPPORT
@@ -151,19 +151,19 @@ You can also look for information at:
 
 =item * GitHub
 
-L<https://github.com/genio/lwp-protocl-ghttp>
+L<https://github.com/genio/lwp-protocol-ghttp>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/lwp-protocl-ghttp>
+L<http://annocpan.org/dist/lwp-protocol-ghttp>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/lwp-protocl-ghttp>
+L<http://cpanratings.perl.org/d/lwp-protocol-ghttp>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/lwp-protocl-ghttp/>
+L<http://search.cpan.org/dist/lwp-protocol-ghttp/>
 
 =back
 
