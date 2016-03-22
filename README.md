@@ -52,13 +52,13 @@ my $response = $ua->request($request, $proxy, \&callback, 1024);
 Dispatches a request over the HTTP protocol and returns a response object.
 Refer to [LWP::UserAgent](http://metacpan.org/pod/LWP::UserAgent) for description of the arguments.
 
-## MAINTAINER
-
-Chase Whitener -- cwhitener@gmail.com
-
 ## AUTHOR
 
 Gisle Aas
+
+## CONTRIBUTORS
+
+Chase Whitener  -- capoeirab@cpan.org
 
 ## BUGS
 
