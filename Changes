@@ -4,6 +4,7 @@ Revision history for {{$dist->name}}
     - moved author tests into proper xt/author directory
     - made to use DZilla
     - Capitalized all references to the GNOME project
+    - perltidied things
 
 6.16    2016-02-16
     - Stripped from the main LWP distribution

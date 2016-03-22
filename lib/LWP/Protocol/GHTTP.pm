@@ -7,7 +7,7 @@ use 5.008001;
 use base 'LWP::Protocol';
 
 use Carp ();
-use HTTP::GHTTP qw(METHOD_GET METHOD_HEAD METHOD_POST);;
+use HTTP::GHTTP qw(METHOD_GET METHOD_HEAD METHOD_POST);
 use HTTP::Response ();
 use HTTP::Status qw(:constants);
 use IO::Handle ();
@@ -16,14 +16,10 @@ use utf8;
 
 our $VERSION = '6.16';
 
-my %METHOD = (
-    GET  => METHOD_GET,
-    HEAD => METHOD_HEAD,
-    POST => METHOD_POST,
-);
+my %METHOD = (GET => METHOD_GET, HEAD => METHOD_HEAD, POST => METHOD_POST,);
 
 sub request {
-    my($self, $request, $proxy, $arg, $size, $timeout) = @_;
+    my ($self, $request, $proxy, $arg, $size, $timeout) = @_;
 
     my $method = $request->method;
     unless (exists $METHOD{$method}) {
@@ -31,8 +27,9 @@ sub request {
     }
 
     my $r = HTTP::GHTTP->new($request->uri);
+
     # XXX what headers for repeated headers here?
-    $request->headers->scan(sub { $r->set_header(@_)});
+    $request->headers->scan(sub { $r->set_header(@_) });
 
     $r->set_type($METHOD{$method});
 
@@ -49,10 +46,11 @@ sub request {
 
     # XXX How can get the headers out of $r??  This way is too stupid.
     my @headers = try {
-        return $r->get_headers();  # not always available
+        return $r->get_headers();    # not always available
     }
     catch {
-        return qw(Date Connection Server Content-type Accept-Ranges Server Content-Length Last-Modified ETag);
+        return
+            qw(Date Connection Server Content-type Accept-Ranges Server Content-Length Last-Modified ETag);
     };
     for my $head (@headers) {
         my $v = $r->get_header($head);
@@ -62,7 +60,7 @@ sub request {
     return $self->collect_once($arg, $response, $r->get_body);
 }
 
-1; # End of LWP::Protocol::GHTTP
+1;    # End of LWP::Protocol::GHTTP
 
 =encoding utf8
 
