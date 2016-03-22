@@ -84,7 +84,7 @@ LWP::Protocol::GHTTP - Provide GHTTP support for L<LWP::UserAgent> via L<HTTP::G
 
 =head1 DESCRIPTION
 
-This module depends on the Gnome libghttp
+This module depends on the GNOME libghttp
 L<http://ftp.gnome.org/pub/gnome/sources/libghttp> project. That project is no
 longer in development.  If you are trying to use this module, you'd likely do
 better to just use L<LWP::Protocol::http> or L<LWP::Protocol::https>.
@@ -109,7 +109,7 @@ underlying modules to install.
 
 WARNING!
 
-This module depends on the Gnome libghttp
+This module depends on the GNOME libghttp
 L<http://ftp.gnome.org/pub/gnome/sources/libghttp> project. That project is no
 longer in development.  If you are trying to use this module, you'd likely do
 better to just use L<LWP::Protocol::http> or L<LWP::Protocol::https>.
@@ -131,49 +131,24 @@ overriding functions.
 Dispatches a request over the HTTP protocol and returns a response object.
 Refer to L<LWP::UserAgent> for description of the arguments.
 
-=head1 MAINTAINER
-
-Chase Whitener << <cwhitener at gmail.com> >>
-
 =head1 AUTHOR
 
 Gisle Aas
+
+=head1 CONTRIBUTORS
+
+=over 4
+
+=item *
+
+Chase Whitener -- C<capoeirab at cpan.org>
+
+=back
 
 =head1 BUGS
 
 Please report any bugs or feature requests on GitHub L<https://github.com/genio/lwp-protocol-ghttp/issues>.
 We appreciate any and all criticism, bug reports, enhancements, or fixes.
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc LWP::Protocol::GHTTP
-
-
-You can also look for information at:
-
-=over 4
-
-=item * GitHub
-
-L<https://github.com/genio/lwp-protocol-ghttp>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/lwp-protocol-ghttp>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/lwp-protocol-ghttp>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/lwp-protocol-ghttp/>
-
-=back
-
-=head1 ACKNOWLEDGEMENTS
 
 =head1 LICENSE AND COPYRIGHT
 

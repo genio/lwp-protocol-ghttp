@@ -1,4 +1,9 @@
-Revision history for LWP::Protocol::GHTTP
+Revision history for {{$dist->name}}
+
+{{$NEXT}}
+    - moved author tests into proper xt/author directory
+    - made to use DZilla
+    - Capitalized all references to the GNOME project
 
 6.16    2016-02-16
     - Stripped from the main LWP distribution
