@@ -66,7 +66,7 @@ sub request {
 
 =head1 NAME
 
-LWP::Protocol::GHTTP - Provide GHTTP support for L<LWP::UserAgent> via L<HTTP::GHTTP>.
+LWP::Protocol::GHTTP - (DEPRECATED) Provide GHTTP support for L<LWP::UserAgent> via L<HTTP::GHTTP>.
 
 =head1 SYNOPSIS
 
@@ -131,7 +131,7 @@ Refer to L<LWP::UserAgent> for description of the arguments.
 
 =head1 AUTHOR
 
-Gisle Aas
+Gisle Aas <F<gisle@ActiveState.com>>
 
 =head1 CONTRIBUTORS
 
@@ -139,7 +139,7 @@ Gisle Aas
 
 =item *
 
-Chase Whitener -- C<capoeirab at cpan.org>
+Chase Whitener <F<capoeirab@cpan.org>>
 
 =back
 

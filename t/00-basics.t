@@ -1,7 +1,6 @@
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
-use 5.008001;
 
 use Config;
 use FindBin;
