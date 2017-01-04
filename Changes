@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+6.17      2017-01-04
     - made to use DZilla
     - Capitalized all references to the GNOME project
     - perltidied things
